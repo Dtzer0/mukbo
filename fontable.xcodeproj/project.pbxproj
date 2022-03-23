@@ -12,6 +12,19 @@
 		EC523E2527E84BE50022D688 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = EC523E2227E84BE50022D688 /* second.png */; };
 		EC523E2627E84BE50022D688 /* third.png in Resources */ = {isa = PBXBuildFile; fileRef = EC523E2327E84BE50022D688 /* third.png */; };
 		EC523E2727E84BE50022D688 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = EC523E2427E84BE50022D688 /* first.png */; };
+		EC523E3427E94C3F0022D688 /* candy.png in Resources */ = {isa = PBXBuildFile; fileRef = EC523E2927E94C3F0022D688 /* candy.png */; };
+		EC523E3527E94C3F0022D688 /* cookie.png in Resources */ = {isa = PBXBuildFile; fileRef = EC523E2A27E94C3F0022D688 /* cookie.png */; };
+		EC523E3627E94C3F0022D688 /* potatos.png in Resources */ = {isa = PBXBuildFile; fileRef = EC523E2B27E94C3F0022D688 /* potatos.png */; };
+		EC523E3727E94C3F0022D688 /* muffin.png in Resources */ = {isa = PBXBuildFile; fileRef = EC523E2C27E94C3F0022D688 /* muffin.png */; };
+		EC523E3827E94C3F0022D688 /* chocolate.png in Resources */ = {isa = PBXBuildFile; fileRef = EC523E2D27E94C3F0022D688 /* chocolate.png */; };
+		EC523E3927E94C3F0022D688 /* coffie.png in Resources */ = {isa = PBXBuildFile; fileRef = EC523E2F27E94C3F0022D688 /* coffie.png */; };
+		EC523E3A27E94C3F0022D688 /* soda.png in Resources */ = {isa = PBXBuildFile; fileRef = EC523E3027E94C3F0022D688 /* soda.png */; };
+		EC523E3B27E94C3F0022D688 /* orange.png in Resources */ = {isa = PBXBuildFile; fileRef = EC523E3127E94C3F0022D688 /* orange.png */; };
+		EC523E3C27E94C3F0022D688 /* lemonade.png in Resources */ = {isa = PBXBuildFile; fileRef = EC523E3227E94C3F0022D688 /* lemonade.png */; };
+		EC523E3D27E94C3F0022D688 /* coke.png in Resources */ = {isa = PBXBuildFile; fileRef = EC523E3327E94C3F0022D688 /* coke.png */; };
+		EC523E4027EA98A00022D688 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC523E3F27EA98A00022D688 /* DetailViewController.swift */; };
+		EC523E4227EA98DE0022D688 /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC523E4127EA98DE0022D688 /* RequestViewController.swift */; };
+		EC523E4427EAC56D0022D688 /* mukbo.png in Resources */ = {isa = PBXBuildFile; fileRef = EC523E4327EAC56D0022D688 /* mukbo.png */; };
 		ECD37B9427E2C3E8003DBD77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD37B9327E2C3E8003DBD77 /* AppDelegate.swift */; };
 		ECD37B9627E2C3E8003DBD77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD37B9527E2C3E8003DBD77 /* SceneDelegate.swift */; };
 		ECD37B9827E2C3E8003DBD77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD37B9727E2C3E8003DBD77 /* ViewController.swift */; };
@@ -30,6 +43,19 @@
 		EC523E2227E84BE50022D688 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		EC523E2327E84BE50022D688 /* third.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = third.png; sourceTree = "<group>"; };
 		EC523E2427E84BE50022D688 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		EC523E2927E94C3F0022D688 /* candy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = candy.png; sourceTree = "<group>"; };
+		EC523E2A27E94C3F0022D688 /* cookie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cookie.png; sourceTree = "<group>"; };
+		EC523E2B27E94C3F0022D688 /* potatos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = potatos.png; sourceTree = "<group>"; };
+		EC523E2C27E94C3F0022D688 /* muffin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = muffin.png; sourceTree = "<group>"; };
+		EC523E2D27E94C3F0022D688 /* chocolate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chocolate.png; sourceTree = "<group>"; };
+		EC523E2F27E94C3F0022D688 /* coffie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coffie.png; sourceTree = "<group>"; };
+		EC523E3027E94C3F0022D688 /* soda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = soda.png; sourceTree = "<group>"; };
+		EC523E3127E94C3F0022D688 /* orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orange.png; sourceTree = "<group>"; };
+		EC523E3227E94C3F0022D688 /* lemonade.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lemonade.png; sourceTree = "<group>"; };
+		EC523E3327E94C3F0022D688 /* coke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coke.png; sourceTree = "<group>"; };
+		EC523E3F27EA98A00022D688 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		EC523E4127EA98DE0022D688 /* RequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
+		EC523E4327EAC56D0022D688 /* mukbo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mukbo.png; sourceTree = "<group>"; };
 		ECD37B9027E2C3E8003DBD77 /* fontable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fontable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD37B9327E2C3E8003DBD77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECD37B9527E2C3E8003DBD77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,11 +84,47 @@
 		EC523E2127E84BD50022D688 /* Banners */ = {
 			isa = PBXGroup;
 			children = (
+				EC523E4327EAC56D0022D688 /* mukbo.png */,
+				EC523E2E27E94C3F0022D688 /* drinks */,
+				EC523E2827E94C3F0022D688 /* snacks */,
 				EC523E2427E84BE50022D688 /* first.png */,
 				EC523E2227E84BE50022D688 /* second.png */,
 				EC523E2327E84BE50022D688 /* third.png */,
 			);
 			path = Banners;
+			sourceTree = "<group>";
+		};
+		EC523E2827E94C3F0022D688 /* snacks */ = {
+			isa = PBXGroup;
+			children = (
+				EC523E2927E94C3F0022D688 /* candy.png */,
+				EC523E2A27E94C3F0022D688 /* cookie.png */,
+				EC523E2B27E94C3F0022D688 /* potatos.png */,
+				EC523E2C27E94C3F0022D688 /* muffin.png */,
+				EC523E2D27E94C3F0022D688 /* chocolate.png */,
+			);
+			path = snacks;
+			sourceTree = "<group>";
+		};
+		EC523E2E27E94C3F0022D688 /* drinks */ = {
+			isa = PBXGroup;
+			children = (
+				EC523E2F27E94C3F0022D688 /* coffie.png */,
+				EC523E3027E94C3F0022D688 /* soda.png */,
+				EC523E3127E94C3F0022D688 /* orange.png */,
+				EC523E3227E94C3F0022D688 /* lemonade.png */,
+				EC523E3327E94C3F0022D688 /* coke.png */,
+			);
+			path = drinks;
+			sourceTree = "<group>";
+		};
+		EC523E3E27EA98650022D688 /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				EC523E3F27EA98A00022D688 /* DetailViewController.swift */,
+				EC523E4127EA98DE0022D688 /* RequestViewController.swift */,
+			);
+			path = Popup;
 			sourceTree = "<group>";
 		};
 		ECD37B8727E2C3E8003DBD77 = {
@@ -110,6 +172,7 @@
 				ECD37B9927E2C3E8003DBD77 /* Main.storyboard */,
 				ECD37BB027E30762003DBD77 /* Snack */,
 				ECD37BB127E3077A003DBD77 /* WantList */,
+				EC523E3E27EA98650022D688 /* Popup */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -192,12 +255,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC523E3A27E94C3F0022D688 /* soda.png in Resources */,
+				EC523E3627E94C3F0022D688 /* potatos.png in Resources */,
+				EC523E4427EAC56D0022D688 /* mukbo.png in Resources */,
 				ECD37BA027E2C3EA003DBD77 /* LaunchScreen.storyboard in Resources */,
+				EC523E3827E94C3F0022D688 /* chocolate.png in Resources */,
+				EC523E3C27E94C3F0022D688 /* lemonade.png in Resources */,
 				ECD37BAE27E2FC49003DBD77 /* LeeSeoyun.otf in Resources */,
 				EC523E2727E84BE50022D688 /* first.png in Resources */,
+				EC523E3427E94C3F0022D688 /* candy.png in Resources */,
 				ECD37B9D27E2C3EA003DBD77 /* Assets.xcassets in Resources */,
+				EC523E3B27E94C3F0022D688 /* orange.png in Resources */,
 				ECD37B9B27E2C3E8003DBD77 /* Main.storyboard in Resources */,
+				EC523E3727E94C3F0022D688 /* muffin.png in Resources */,
+				EC523E3D27E94C3F0022D688 /* coke.png in Resources */,
 				EC523E2527E84BE50022D688 /* second.png in Resources */,
+				EC523E3527E94C3F0022D688 /* cookie.png in Resources */,
+				EC523E3927E94C3F0022D688 /* coffie.png in Resources */,
 				EC523E2627E84BE50022D688 /* third.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,7 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC523E4027EA98A00022D688 /* DetailViewController.swift in Sources */,
 				ECD37B9827E2C3E8003DBD77 /* ViewController.swift in Sources */,
+				EC523E4227EA98DE0022D688 /* RequestViewController.swift in Sources */,
 				EC523E1F27E846750022D688 /* BannerCell.swift in Sources */,
 				ECD37BB327E30B5D003DBD77 /* SnackCollectionViewCell.swift in Sources */,
 				EC523E1D27E83DD20022D688 /* DrinkCollectionViewCell.swift in Sources */,

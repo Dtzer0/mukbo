@@ -15,10 +15,12 @@ class ViewController: UIViewController {
     
     //임시 데이터
     let bannerImage : Array<UIImage> = [UIImage(named: "first.png")!, UIImage(named: "second.png")!, UIImage(named: "third.png")!]
+    let snackImage : Array<UIImage> =  [UIImage(named: "candy.png")!, UIImage(named: "cookie.png")!, UIImage(named: "potatos.png")!, UIImage(named: "muffin.png")!, UIImage(named: "chocolate.png")!]
+    let drinkImage : Array<UIImage> =  [UIImage(named: "coffie.png")!, UIImage(named: "soda.png")!, UIImage(named: "orange.png")!, UIImage(named: "lemonade.png")!, UIImage(named: "coke.png")!]
     
     var thispage = 0
-    let testsnack = ["새우깡 매운맛", "초코틴틴 말차맛", "빅파이 딸기맛", "롤리폴리 초코맛", "삽립 피자호빵"]
-    let testdrink = ["2% 부족할때 복숭아맛", "파워에이드", "게토레이", "파워오투 오렌지향", "복숭아녹차"]
+    let testsnack = ["츄파춥스 레몬맛", "초코틴틴 초코맛", "포카칩 소금맛", "롤리폴리 초코맛", "가나 초콜릿"]
+    let testdrink = ["콘트라베이스 라떼", "복숭아녹차", "게토레이", "레몬에이드", "환타 오렌지맛"]
     
     //2초마다 실행되는 타이머
     func scrollTime() {
@@ -28,7 +30,7 @@ class ViewController: UIViewController {
     }
     
     func scrollBanner() {
-        if thispage == bannerImage.count - 1 { //마지막페이지
+        if thispage == bannerImage.count - 1 { //마지막페이지라면
             advertise.scrollToItem(at: NSIndexPath(item: 0, section: 0) as IndexPath, at: .right, animated: true)
             thispage = 0
         } else {
@@ -58,7 +60,14 @@ class ViewController: UIViewController {
 extension ViewController : UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return bannerImage.count
+        
+        if collectionView == advertise {
+            return bannerImage.count
+        } else if collectionView == snacks {
+            return snackImage.count
+        } else {
+            return drinkImage.count
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -75,7 +84,7 @@ extension ViewController : UICollectionViewDelegate, UICollectionViewDataSource 
             guard let snackCells = snacks.dequeueReusableCell(withReuseIdentifier: "snack", for: indexPath) as? SnackCollectionViewCell else {
                 return UICollectionViewCell()
             }
-            snackCells.snackImg.image = bannerImage[indexPath.row]
+            snackCells.snackImg.image = snackImage[indexPath.row]
             snackCells.snackLabel.text = testsnack[indexPath.row]
             
             return snackCells
@@ -83,11 +92,26 @@ extension ViewController : UICollectionViewDelegate, UICollectionViewDataSource 
             guard let drinkCells = drinks.dequeueReusableCell(withReuseIdentifier: "drink", for: indexPath) as? DrinkCollectionViewCell else {
                 return UICollectionViewCell()
             }
-            drinkCells.drinkImg.image = bannerImage[indexPath.row]
+            drinkCells.drinkImg.image = drinkImage[indexPath.row]
             drinkCells.driinkLabel.text = testdrink[indexPath.row]
             
             return drinkCells
         }
     }
     
+}
+
+extension ViewController : UICollectionViewDelegateFlowLayout {
+    //컬렉션뷰 사이즈 설정
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        if collectionView == advertise {
+            return CGSize(width: advertise.frame.size.width, height: advertise.frame.height)
+        } else if collectionView == snacks {
+            return CGSize(width: 180, height: 200)
+        } else {
+            return CGSize(width: 180, height: 200)
+        }
+        
+    }
 }

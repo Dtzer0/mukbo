@@ -11,6 +11,13 @@ class ListsViewController: UIViewController {
     
     @IBOutlet weak var tableViews: UITableView!
     
+    @IBAction func addList(_ sender: Any) {
+        let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
+        let reqVC = storyBoard.instantiateViewController(withIdentifier: "request")
+        reqVC.modalPresentationStyle = .overCurrentContext
+        present(reqVC, animated: true, completion: nil)
+    }
+    
     let testarray = ["snack", "water", "sprite"]
     let testcells = ["1200", "500", "1800"]
     
