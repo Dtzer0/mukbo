@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     var thispage = 0
     let testsnack = ["츄파춥스 레몬맛", "초코틴틴 초코맛", "포카칩 소금맛", "롤리폴리 초코맛", "가나 초콜릿"]
     let testdrink = ["콘트라베이스 라떼", "복숭아녹차", "게토레이", "레몬에이드", "환타 오렌지맛"]
+    let testprice = ["1200", "1000", "1500", "2000", "1800"]
     
     //2초마다 실행되는 타이머
     func scrollTime() {
@@ -72,7 +73,7 @@ extension ViewController : UICollectionViewDelegate, UICollectionViewDataSource 
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        //각 콜렉션뷰에 다른 정보가 기입되어야함
+        //각 콜렉션뷰에 다른 정보가 기입되어야함 ( 하나의 뷰에 여러개의 cell )
         if collectionView == advertise {
             guard let bannerCells = advertise.dequeueReusableCell(withReuseIdentifier: "banner", for: indexPath) as? BannerCell else {
                 return UICollectionViewCell()
@@ -86,6 +87,7 @@ extension ViewController : UICollectionViewDelegate, UICollectionViewDataSource 
             }
             snackCells.snackImg.image = snackImage[indexPath.row]
             snackCells.snackLabel.text = testsnack[indexPath.row]
+            snackCells.moneyLabel.text = testprice[indexPath.row]
             
             return snackCells
         } else {
@@ -94,6 +96,7 @@ extension ViewController : UICollectionViewDelegate, UICollectionViewDataSource 
             }
             drinkCells.drinkImg.image = drinkImage[indexPath.row]
             drinkCells.driinkLabel.text = testdrink[indexPath.row]
+            drinkCells.priceLabel.text = testprice[indexPath.row]
             
             return drinkCells
         }
@@ -102,7 +105,7 @@ extension ViewController : UICollectionViewDelegate, UICollectionViewDataSource 
 }
 
 extension ViewController : UICollectionViewDelegateFlowLayout {
-    //컬렉션뷰 사이즈 설정
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         if collectionView == advertise {

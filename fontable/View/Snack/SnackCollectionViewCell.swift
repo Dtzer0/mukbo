@@ -11,5 +11,6 @@ class SnackCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var snackImg: UIImageView!
     @IBOutlet weak var snackLabel: UILabel!
+    @IBOutlet weak var moneyLabel: UILabel!
     
 }

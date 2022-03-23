@@ -11,6 +11,7 @@ class ListsTableViewCell: UITableViewCell {
 
     @IBOutlet weak var products: UILabel!
     @IBOutlet weak var prides: UILabel!
+    @IBOutlet weak var brands: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,6 +22,7 @@ class ListsTableViewCell: UITableViewCell {
         
         contentView.addSubview(products)
         contentView.addSubview(prides)
+        contentView.addSubview(brands)
     }
 
 }

@@ -18,8 +18,9 @@ class ListsViewController: UIViewController {
         present(reqVC, animated: true, completion: nil)
     }
     
-    let testarray = ["snack", "water", "sprite"]
-    let testcells = ["1200", "500", "1800"]
+    let testarray = ["너가좋아하는까까", "수미칩허니머스타드", "가나초콜릿다크"]
+    let testcells = ["12000", "2500", "800"]
+    let testbrands = ["지구를위하여", "농심", "롯데"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +42,7 @@ extension ListsViewController : UITableViewDelegate, UITableViewDataSource {
         let cell = tableViews.dequeueReusableCell(withIdentifier: "test", for: indexPath) as! ListsTableViewCell
         cell.products.text = testarray[indexPath.row]
         cell.prides.text = testcells[indexPath.row]
+        cell.brands.text = testbrands[indexPath.row]
         
         return cell
     }

@@ -11,5 +11,6 @@ class DrinkCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var drinkImg: UIImageView!
     @IBOutlet weak var driinkLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
     
 }

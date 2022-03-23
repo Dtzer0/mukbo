@@ -22,9 +22,13 @@
 		EC523E3B27E94C3F0022D688 /* orange.png in Resources */ = {isa = PBXBuildFile; fileRef = EC523E3127E94C3F0022D688 /* orange.png */; };
 		EC523E3C27E94C3F0022D688 /* lemonade.png in Resources */ = {isa = PBXBuildFile; fileRef = EC523E3227E94C3F0022D688 /* lemonade.png */; };
 		EC523E3D27E94C3F0022D688 /* coke.png in Resources */ = {isa = PBXBuildFile; fileRef = EC523E3327E94C3F0022D688 /* coke.png */; };
-		EC523E4027EA98A00022D688 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC523E3F27EA98A00022D688 /* DetailViewController.swift */; };
 		EC523E4227EA98DE0022D688 /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC523E4127EA98DE0022D688 /* RequestViewController.swift */; };
 		EC523E4427EAC56D0022D688 /* mukbo.png in Resources */ = {isa = PBXBuildFile; fileRef = EC523E4327EAC56D0022D688 /* mukbo.png */; };
+		EC523E4727EAFE650022D688 /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC523E4627EAFE650022D688 /* SignViewController.swift */; };
+		EC523E4927EB28F90022D688 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC523E4827EB28F90022D688 /* DetailsViewController.swift */; };
+		EC523E4C27EB29D70022D688 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC523E4A27EB29D70022D688 /* Model.xcdatamodeld */; };
+		EC523E5027EB2DE10022D688 /* Foods+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC523E4E27EB2DE10022D688 /* Foods+CoreDataClass.swift */; };
+		EC523E5127EB2DE10022D688 /* Foods+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC523E4F27EB2DE10022D688 /* Foods+CoreDataProperties.swift */; };
 		ECD37B9427E2C3E8003DBD77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD37B9327E2C3E8003DBD77 /* AppDelegate.swift */; };
 		ECD37B9627E2C3E8003DBD77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD37B9527E2C3E8003DBD77 /* SceneDelegate.swift */; };
 		ECD37B9827E2C3E8003DBD77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD37B9727E2C3E8003DBD77 /* ViewController.swift */; };
@@ -53,9 +57,13 @@
 		EC523E3127E94C3F0022D688 /* orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orange.png; sourceTree = "<group>"; };
 		EC523E3227E94C3F0022D688 /* lemonade.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lemonade.png; sourceTree = "<group>"; };
 		EC523E3327E94C3F0022D688 /* coke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coke.png; sourceTree = "<group>"; };
-		EC523E3F27EA98A00022D688 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		EC523E4127EA98DE0022D688 /* RequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
 		EC523E4327EAC56D0022D688 /* mukbo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mukbo.png; sourceTree = "<group>"; };
+		EC523E4627EAFE650022D688 /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
+		EC523E4827EB28F90022D688 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		EC523E4B27EB29D70022D688 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		EC523E4E27EB2DE10022D688 /* Foods+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Foods+CoreDataClass.swift"; path = "fontable/Extension/Foods+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EC523E4F27EB2DE10022D688 /* Foods+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Foods+CoreDataProperties.swift"; path = "fontable/Extension/Foods+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		ECD37B9027E2C3E8003DBD77 /* fontable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fontable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD37B9327E2C3E8003DBD77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECD37B9527E2C3E8003DBD77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,15 +129,24 @@
 		EC523E3E27EA98650022D688 /* Popup */ = {
 			isa = PBXGroup;
 			children = (
-				EC523E3F27EA98A00022D688 /* DetailViewController.swift */,
 				EC523E4127EA98DE0022D688 /* RequestViewController.swift */,
 			);
 			path = Popup;
 			sourceTree = "<group>";
 		};
+		EC523E4527EAFE400022D688 /* Mypage */ = {
+			isa = PBXGroup;
+			children = (
+				EC523E4627EAFE650022D688 /* SignViewController.swift */,
+			);
+			path = Mypage;
+			sourceTree = "<group>";
+		};
 		ECD37B8727E2C3E8003DBD77 = {
 			isa = PBXGroup;
 			children = (
+				EC523E4E27EB2DE10022D688 /* Foods+CoreDataClass.swift */,
+				EC523E4F27EB2DE10022D688 /* Foods+CoreDataProperties.swift */,
 				ECD37B9227E2C3E8003DBD77 /* fontable */,
 				ECD37B9127E2C3E8003DBD77 /* Products */,
 			);
@@ -153,6 +170,7 @@
 				ECD37B9527E2C3E8003DBD77 /* SceneDelegate.swift */,
 				ECD37B9C27E2C3EA003DBD77 /* Assets.xcassets */,
 				ECD37B9E27E2C3EA003DBD77 /* LaunchScreen.storyboard */,
+				EC523E4A27EB29D70022D688 /* Model.xcdatamodeld */,
 				ECD37BA127E2C3EA003DBD77 /* Info.plist */,
 			);
 			path = fontable;
@@ -172,6 +190,7 @@
 				ECD37B9927E2C3E8003DBD77 /* Main.storyboard */,
 				ECD37BB027E30762003DBD77 /* Snack */,
 				ECD37BB127E3077A003DBD77 /* WantList */,
+				EC523E4527EAFE400022D688 /* Mypage */,
 				EC523E3E27EA98650022D688 /* Popup */,
 			);
 			path = View;
@@ -193,6 +212,7 @@
 			children = (
 				ECD37BAA27E2F1C5003DBD77 /* ListsViewController.swift */,
 				ECD37BAC27E2F78B003DBD77 /* ListsTableViewCell.swift */,
+				EC523E4827EB28F90022D688 /* DetailsViewController.swift */,
 			);
 			path = WantList;
 			sourceTree = "<group>";
@@ -283,16 +303,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC523E4027EA98A00022D688 /* DetailViewController.swift in Sources */,
 				ECD37B9827E2C3E8003DBD77 /* ViewController.swift in Sources */,
 				EC523E4227EA98DE0022D688 /* RequestViewController.swift in Sources */,
 				EC523E1F27E846750022D688 /* BannerCell.swift in Sources */,
+				EC523E4927EB28F90022D688 /* DetailsViewController.swift in Sources */,
 				ECD37BB327E30B5D003DBD77 /* SnackCollectionViewCell.swift in Sources */,
+				EC523E5127EB2DE10022D688 /* Foods+CoreDataProperties.swift in Sources */,
 				EC523E1D27E83DD20022D688 /* DrinkCollectionViewCell.swift in Sources */,
 				ECD37BAD27E2F78B003DBD77 /* ListsTableViewCell.swift in Sources */,
 				ECD37B9427E2C3E8003DBD77 /* AppDelegate.swift in Sources */,
+				EC523E4727EAFE650022D688 /* SignViewController.swift in Sources */,
 				ECD37BAB27E2F1C5003DBD77 /* ListsViewController.swift in Sources */,
 				ECD37B9627E2C3E8003DBD77 /* SceneDelegate.swift in Sources */,
+				EC523E5027EB2DE10022D688 /* Foods+CoreDataClass.swift in Sources */,
+				EC523E4C27EB29D70022D688 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +536,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EC523E4A27EB29D70022D688 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EC523E4B27EB29D70022D688 /* Model.xcdatamodel */,
+			);
+			currentVersion = EC523E4B27EB29D70022D688 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = ECD37B8827E2C3E8003DBD77 /* Project object */;
 }
