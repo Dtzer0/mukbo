@@ -6,19 +6,21 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var advertise: UICollectionView!
     @IBOutlet weak var snacks: UICollectionView!
     @IBOutlet weak var drinks: UICollectionView!
+    
+    var thispage = 0
     
     //임시 데이터
     let bannerImage : Array<UIImage> = [UIImage(named: "first.png")!, UIImage(named: "second.png")!, UIImage(named: "third.png")!]
     let snackImage : Array<UIImage> =  [UIImage(named: "candy.png")!, UIImage(named: "cookie.png")!, UIImage(named: "potatos.png")!, UIImage(named: "muffin.png")!, UIImage(named: "chocolate.png")!]
     let drinkImage : Array<UIImage> =  [UIImage(named: "coffie.png")!, UIImage(named: "soda.png")!, UIImage(named: "orange.png")!, UIImage(named: "lemonade.png")!, UIImage(named: "coke.png")!]
     
-    var thispage = 0
     let testsnack = ["츄파춥스 레몬맛", "초코틴틴 초코맛", "포카칩 소금맛", "롤리폴리 초코맛", "가나 초콜릿"]
     let testdrink = ["콘트라베이스 라떼", "복숭아녹차", "게토레이", "레몬에이드", "환타 오렌지맛"]
     let testprice = ["1200", "1000", "1500", "2000", "1800"]
