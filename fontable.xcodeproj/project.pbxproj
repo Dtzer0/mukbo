@@ -37,6 +37,7 @@
 		ECD37BAD27E2F78B003DBD77 /* ListsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD37BAC27E2F78B003DBD77 /* ListsTableViewCell.swift */; };
 		ECD37BAE27E2FC49003DBD77 /* LeeSeoyun.otf in Resources */ = {isa = PBXBuildFile; fileRef = ECD37BA827E2C44C003DBD77 /* LeeSeoyun.otf */; };
 		ECD37BB327E30B5D003DBD77 /* SnackCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD37BB227E30B5D003DBD77 /* SnackCollectionViewCell.swift */; };
+		ECE031D32820AB570090BD30 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE031D22820AB570090BD30 /* PopupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		ECD37BAA27E2F1C5003DBD77 /* ListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsViewController.swift; sourceTree = "<group>"; };
 		ECD37BAC27E2F78B003DBD77 /* ListsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsTableViewCell.swift; sourceTree = "<group>"; };
 		ECD37BB227E30B5D003DBD77 /* SnackCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackCollectionViewCell.swift; sourceTree = "<group>"; };
+		ECE031D22820AB570090BD30 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 			children = (
 				ECD37BAA27E2F1C5003DBD77 /* ListsViewController.swift */,
 				ECD37BAC27E2F78B003DBD77 /* ListsTableViewCell.swift */,
+				ECE031D22820AB570090BD30 /* PopupViewController.swift */,
 			);
 			path = WantList;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				ECD37BAB27E2F1C5003DBD77 /* ListsViewController.swift in Sources */,
 				ECD37B9627E2C3E8003DBD77 /* SceneDelegate.swift in Sources */,
 				EC523E4C27EB29D70022D688 /* Model.xcdatamodeld in Sources */,
+				ECE031D32820AB570090BD30 /* PopupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

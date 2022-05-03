@@ -376,10 +376,10 @@
             </objects>
             <point key="canvasLocation" x="1921.7391304347827" y="444.64285714285711"/>
         </scene>
-        <!--Lists View Controller-->
+        <!--Popup View Controller-->
         <scene sceneID="y6A-ld-EhZ">
             <objects>
-                <viewController storyboardIdentifier="request" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Par-Wi-18L" customClass="ListsViewController" customModule="fontable" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="request" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Par-Wi-18L" customClass="PopupViewController" customModule="fontable" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e8Z-gP-qN8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -438,7 +438,7 @@
                                             <fontDescription key="titleFontDescription" name="LeeSeoyun" family="LeeSeoyun" pointSize="20"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="addBtn:" destination="Par-Wi-18L" eventType="touchUpInside" id="x6V-Mn-gfW"/>
+                                            <action selector="addBtn:" destination="Par-Wi-18L" eventType="touchUpInside" id="Ssp-NG-xwC"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vf7-Yg-eg3">
@@ -452,7 +452,7 @@
                                             <fontDescription key="titleFontDescription" name="LeeSeoyun" family="LeeSeoyun" pointSize="20"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="cancelBtn:" destination="Par-Wi-18L" eventType="touchUpInside" id="yfs-Fa-v95"/>
+                                            <action selector="cancelBtn:" destination="Par-Wi-18L" eventType="touchUpInside" id="6TU-SY-M1V"/>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="여기다 적어요" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dGb-QW-nyg">
@@ -524,9 +524,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="brandName" destination="EBX-sq-fe0" id="Hnd-fn-bvW"/>
-                        <outlet property="foodName" destination="dGb-QW-nyg" id="GQh-rr-hXC"/>
-                        <outlet property="priceName" destination="Kkr-ze-bCO" id="gTI-Jk-JUZ"/>
+                        <outlet property="brandName" destination="EBX-sq-fe0" id="IbX-CD-3gt"/>
+                        <outlet property="foodName" destination="dGb-QW-nyg" id="DTE-V1-QKK"/>
+                        <outlet property="priceName" destination="Kkr-ze-bCO" id="zV3-2Y-vc7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yTt-Dh-wpS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
