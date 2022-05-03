@@ -20,8 +20,12 @@ Thread 1: "+entityForName: nil is not a legal NSManagedObjectContext parameter s
 
 -> entity 문제인줄 알고 해당 부분을 중점으로 탐색했으나 별다른 문제가 없어 Simulator에 있는 프로젝트를 삭제하고 다시 돌리니 해결되었음
 
-### 4/26 ~
+### 4/26 
 tableview에 로드되지 않는 문제 이유 탐색 + CoreData 코드를 DataManager.swift 파일에 따로 배치
 1. CoreData 코드 작성문제인줄 알고 해당 부분을 중점으로 디버깅 -> 순서면에서는 따로 문제가없음
 2. textfield의 IBOutlet 설정을 하지 않은 것을 확인 -> 수정완료
 3. 전체적인 코드 재탐색 중...
+
+### 5/3
+전체적으로 합쳐져 있던 파일 정리 및 수정 + 신처 리스트 스와이프하여 삭제하는 코드 추가
+1. 아직 데이터가 즉각 테이블에 뜨지 않음! 코드르 다시보며 살펴보는중..
